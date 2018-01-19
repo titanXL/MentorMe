@@ -2,7 +2,7 @@
   "presets": [["env", { "modules": false }], "react"],
   "env": {
     "test": {
-      "presets": [["env", { "modules": true }], "react"],
+      "presets": [["env"], "react"],
       "plugins": ["babel-plugin-transform-es2015-modules-commonjs"]
     }
   }

@@ -1,0 +1,39 @@
+.form {
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    height: 75px;
+    padding-right: 25px;
+}
+
+.loginContainer {
+    width: 402px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.registerContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.logoContainer {
+    height: 60px;
+}

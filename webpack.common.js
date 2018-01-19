@@ -33,18 +33,22 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.css$/,
+        test: /(font-awesome.min.css)/,
+        use:['style-loader', 'css-loader']
+      },
+      {
+        test: /^((?!font-awesome.min).)*\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: [{ loader: 'css-loader', options: { modules: true, importLoaders: 1 } }, 'postcss-loader']
+          use: [{ loader: 'css-loader', options: { modules: true, importLoaders: 1} }, 'postcss-loader']
         })
       },
       {
-        test: /\.(png|gif|jpeg|jpg|svg)$/,
+        test: /\.(png|gif|jpeg|jpg|svg)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: ['file-loader']
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: ['file-loader']
       }
     ]

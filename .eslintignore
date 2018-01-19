@@ -3,3 +3,4 @@ dist
 src/*.test.js
 webpack.*.js
 *.config.js
+.idea/
